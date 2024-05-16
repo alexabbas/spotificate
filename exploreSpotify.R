@@ -6,8 +6,7 @@ library(tidyverse)
 library(spotifyr)
 library(httpuv)
 
-clientid = "1e3e367c14764614b74fd97888444a27"
-clientsecret = "a8ea7e8f974349efaea5fdda89603a9e"
+source("secrets.R") # get clientid & clientsecret
 
 Sys.setenv(SPOTIFY_CLIENT_ID = clientid)
 Sys.setenv(SPOTIFY_CLIENT_SECRET = clientsecret)
